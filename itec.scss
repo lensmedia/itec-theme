@@ -1,0 +1,17 @@
+.itec {
+    &.theme-default {
+        @import 'default/theme';
+    }
+
+    &.theme-color-blind-rg {
+        @import 'color-blind-rg/theme';
+    }
+
+    &.theme-color-blind-b {
+        @import 'color-blind-b/theme';
+    }
+
+    &.theme-dyslexic {
+        @import 'dyslexic/theme';
+    }
+}
