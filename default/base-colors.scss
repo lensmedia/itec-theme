@@ -1,0 +1,37 @@
+$color-background: #fcfcfc;
+$color-text: #212528;
+
+$color-primary-dark: #01202d;
+$color-primary-darker: #003d57;
+$color-primary: #006591;
+$color-primary-lighter: #428bca;
+$color-primary-light: adjust-color($color-primary-lighter, $lightness: 10%);
+$color-primary-text: $color-background;
+
+$color-info: rgb(29, 143, 161);
+$color-info-dark: adjust-color($color-info, $lightness: -10%);
+$color-info-darker: adjust-color($color-info, $lightness: -5%);
+$color-info-lighter: adjust-color($color-info, $lightness: 10%);
+$color-info-light: adjust-color($color-info, $lightness: 20%);
+$color-info-text: $color-primary-text;
+
+$color-success: darken(rgb(122, 160, 110), 5%);
+$color-success-dark: adjust-color($color-success, $lightness: -10%);
+$color-success-darker: adjust-color($color-success, $lightness: -5%);
+$color-success-lighter: adjust-color($color-success, $lightness: 10%);
+$color-success-light: adjust-color($color-success, $lightness: 20%);
+$color-success-text: $color-primary-text;
+
+$color-warning: adjust-hue(rgb(189, 99, 33), 10deg);
+$color-warning-dark: adjust-color($color-warning, $lightness: -10%);
+$color-warning-darker: adjust-color($color-warning, $lightness: -5%);
+$color-warning-lighter: adjust-color($color-warning, $lightness: 10%);
+$color-warning-light: adjust-color($color-warning, $lightness: 20%);
+$color-warning-text: $color-success-text;
+
+$color-error: adjust-hue(rgb(189, 119, 33), -25deg);
+$color-error-dark: adjust-color($color-error, $lightness: -10%);
+$color-error-darker: adjust-color($color-error, $lightness: -5%);
+$color-error-lighter: adjust-color($color-error, $lightness: 10%);
+$color-error-light: adjust-color($color-error, $lightness: 20%);
+$color-error-text: $color-success-text;

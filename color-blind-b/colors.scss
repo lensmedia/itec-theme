@@ -1,0 +1,33 @@
+// Result progressbar.
+$color-progress-achieved-text: $color-success-text;
+$color-progress-achieved-background: $color-success-lighter;
+$progress-achieved-border: null;
+
+$color-progress-mapped-text: $color-warning-text;
+$color-progress-mapped-background: $color-warning-lighter;
+$progress-mapped-border: null;
+
+$color-progress-required-text: $color-error-text;
+$color-progress-required-background: $color-error-light;
+$progress-required-border: null;
+
+// Thingy.
+$color-checkbox: $color-error-light;
+$color-checkbox-checked: $color-success-lighter;
+
+// Drag/drop targets (GraphicGapMatch/GaphicSelectPoint).
+$color-target-drag-text: $color-success-lighter;
+$color-target-drag-background: $color-success-text;
+$target-drag-border: 5px solid $color-success-light;
+
+$color-target-drop-text: $color-success-text;
+$color-target-drop-background: $color-success-light;
+$target-drop-border: null;
+
+$color-hotspot-background: rgba($color-success-lighter, .5);
+
+// Marked states.
+$color-item-marked-mark: $color-success-light;
+$color-toolbar-button-active-text: $color-success-light;
+
+$item-tile-active-shadow: 0 0 0 .2em rgba($color-primary-lighter, .4);

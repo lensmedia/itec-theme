@@ -1,0 +1,7 @@
+.volume-slider-graphic {
+    background-image: linear-gradient(
+        to right,
+        adjust-color($color-error-light, $saturation: 50%) 25%,
+        adjust-color($color-success-light, $saturation: 50%) 100%
+    );
+}

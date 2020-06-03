@@ -1,0 +1,11 @@
+.volume-slider-graphic {
+    background-image: linear-gradient(
+        to right,
+        adjust-color($color-error-light, $saturation: 50%) 25%,
+        adjust-color($color-success-light, $saturation: 50%) 100%
+    );
+}
+
+.read-aloud-text-active span {
+    background-color: rgba($color-error, .5);
+}

@@ -1,0 +1,248 @@
+$hr-border: thin solid mix($color-background, $color-text, 85%);
+
+$color-checkbox: $color-error-lighter;
+$color-checkbox-checked: $color-success-lighter;
+
+// Regular white default button.
+$color-button-text: $color-text;
+$color-button-background: mix($color-text, $color-background, 5%);
+$button-border: thin solid darken($color-button-background, 10%);
+
+$color-button-text-hover: null;
+$color-button-background-hover: darken($color-button-background, 5%);
+$button-border-hover: null;
+
+// Inverted button (informationals).
+$color-button-inverted-text: $color-background;
+$color-button-inverted-background: $color-text;
+$button-inverted-border: null;
+
+$color-button-inverted-text-hover: null;
+$color-button-inverted-background-hover: darken($color-button-inverted-background, 5%);
+$button-inverted-border-hover: null;
+
+$color-button-primary-text: $color-primary-text;
+$color-button-primary-background: $color-primary-lighter;
+$button-primary-border: thin solid $color-primary;
+
+$color-button-primary-text-hover: null;
+$color-button-primary-background-hover: darken($color-button-primary-background, 5%);
+$button-primary-border-hover: null;
+
+// Info button (feedback)
+$color-button-info-text: $color-info-text;
+$color-button-info-background: $color-info-lighter;
+$button-info-border: thin solid $color-info;
+
+$color-button-info-text-hover: null;
+$color-button-info-background-hover: darken($color-button-info-background, 5%);
+$button-info-border-hover: null;
+
+$color-button-success-text: $color-success-text;
+$color-button-success-background: $color-success-lighter;
+$button-success-border: thin solid $color-success;
+
+$color-button-success-text-hover: null;
+$color-button-success-background-hover: darken($color-button-success-background, 5%);
+$button-success-border-hover: null;
+
+$color-button-warning-text: $color-warning-text;
+$color-button-warning-background: $color-warning-lighter;
+$button-warning-border: thin solid $color-warning;
+
+$color-button-warning-text-hover: null;
+$color-button-warning-background-hover: darken($color-button-warning-background, 5%);
+$button-warning-border-hover: null;
+
+$color-button-error-text: $color-error-text;
+$color-button-error-background: $color-error-lighter;
+$button-error-border: thin solid $color-error;
+
+$color-button-error-text-hover: null;
+$color-button-error-background-hover: darken($color-button-error-background, 5%);
+$button-error-border-hover: null;
+
+///////////////////
+// NOMOREBUTTONS //
+///////////////////
+
+$color-scrollindicator: $color-text;
+$color-scrollindicator-gradient: $color-background;
+
+// Initializer view.
+$color-initializer-text: $color-primary-text;
+$color-initializer-background: $color-primary-dark;
+
+$color-initializer-loading-text: null;
+$color-initializer-loading-background: $color-primary;
+
+$color-initializer-options-text: null;
+$color-initializer-options-background: $color-primary-darker;
+
+$color-initializer-start-text: null;
+$color-initializer-start-background: $color-primary;
+
+// Overview (and result).
+$color-legend-text: mix($color-text, $color-background, 40%);
+$color-item-marked-mark: orange; // $color-warning-light;
+
+$color-item-tile-text: $color-legend-text;
+$color-item-tile-background: $color-background;
+$item-tile-border: thin solid $color-legend-text;
+
+$color-item-tile-text-correct: $color-success-text;
+$color-item-tile-background-correct: $color-success-lighter;
+$item-tile-border-correct: $color-success-darker;
+
+$color-item-tile-text-incorrect: $color-error-text;
+$color-item-tile-background-incorrect: $color-error-lighter;
+$item-tile-border-incorrect: thin solid $color-error-darker;
+
+$color-item-tile-text-unanswered: $color-warning-lighter;
+$color-item-tile-background-unanswered: transparent;
+$item-tile-border-unanswered: $color-warning-darker;
+
+$item-tile-active-shadow: 0 0 0 .2em rgba($color-primary, .25);
+
+// Thumbs up/down icon color (passed/results).
+$color-passed-icon-success: $color-success-lighter;
+$color-passed-icon-failed: $color-error-lighter;
+
+// Question prompt colors.
+$color-prompt-text: $color-text;
+$color-prompt-background: #f0f0f0;
+$prompt-border: thin solid #ccc;
+
+// Explanation
+$color-explanation-text: $color-prompt-text;
+$color-explanation-background: $color-prompt-background;
+$explanation-border: $prompt-border;
+
+$color-explanation-unanswered: $color-warning-lighter;
+$color-explanation-correct: $color-success-lighter;
+$color-explanation-incorrect: $color-error-lighter;
+
+// Option Bar (Single choice options, numeric entry input (and correct/incorrect in review)).
+$color-option-text: $color-prompt-text;
+$color-option-background: $color-prompt-background;
+$option-border: $prompt-border;
+
+$color-option-active-text: $color-success-text;
+$color-option-active-background: $color-success-lighter;
+$option-active-border: thin solid $color-success;
+
+$color-option-incorrect-text: $color-error-text;
+$color-option-incorrect-background: $color-error-lighter;
+$option-incorrect-border: thin solid $color-error;
+
+$color-option-correct-text: $color-success-text;
+$color-option-correct-background: $color-success-lighter;
+$option-correct-border: thin solid $color-success;
+
+// HotSpot.
+$color-hotspot-text: $color-background;
+$color-hotspot-background: rgba(orange/*$color-warning-lighter*/, .5);
+$color-hotspot-border: null;
+
+// Drag/drop targets (GraphicGapMatch/GaphicSelectPoint).
+$color-target-drag-text: orange; //$color-warning-lighter;
+$color-target-drag-background: $color-warning-text;
+$target-drag-border: 5px solid orange; //$color-warning-lighter;
+
+$color-target-drop-text: $color-warning-text;
+$color-target-drop-background: orange; //$color-warning-lighter;
+$target-drop-border: null;
+
+// OrderInteraction
+$color-orderinteraction-option-text: $color-option-text;
+$color-orderinteraction-option-background: $color-option-background;
+$orderinteraction-option-border: $option-border;
+
+$color-orderinteraction-option-active-text: $color-option-active-text;
+$color-orderinteraction-option-active-background: $color-option-active-background;
+$orderinteraction-option-active-border: $option-active-border;
+
+$color-orderinteraction-option-incorrect-text: $color-option-incorrect-text;
+$color-orderinteraction-option-incorrect-background: $color-option-incorrect-background;
+$orderinteraction-option-incorrect-border: $option-incorrect-border;
+
+$color-orderinteraction-option-correct-text: $color-option-correct-text;
+$color-orderinteraction-option-correct-background: $color-option-correct-background;
+$orderinteraction-option-correct-border: $option-correct-border;
+
+// Modals.
+// Default (yes/no popup etc.)
+$color-modal-text: $color-text;
+$color-modal-background: $color-background;
+$modal-border: thin solid rgba($color-text, .1);
+
+// Primary (toolbar dropdown).
+$color-modal-primary-text: $color-primary-text;
+$color-modal-primary-background: $color-primary;
+$modal-primary-border: null;
+
+// Result progressbar.
+$color-progress-mapped-text: $color-info-text;
+$color-progress-mapped-background: $color-info;
+$progress-mapped-border: null;
+
+$color-progress-required-text: $color-warning-text;
+$color-progress-required-background: $color-warning-lighter;
+$progress-required-border: null;
+
+$color-progress-achieved-text: $color-success-text;
+$color-progress-achieved-background: $color-success;
+$progress-achieved-border: null;
+
+// Toggler thingy (ggm, gsp, hotspot review answer switch thingy).
+$color-toggler-on-text: $color-error-text;
+$color-toggler-on-background: $color-error-lighter;
+$color-toggler-on-border: thin solid $color-error;
+
+$color-toggler-off-text: $color-success-text;
+$color-toggler-off-background: $color-success-lighter;
+$color-toggler-off-border: thin solid $color-success;
+
+// Topic item colors
+$color-topic-item-inadequate-text: $color-error-text;
+$color-topic-item-inadequate-background: $color-error-lighter;
+$topic-item-inadequate-border: null;
+
+$color-topic-item-adequate-text: $color-warning-text;
+$color-topic-item-adequate-background: $color-warning-lighter;
+$topic-item-adequate-border: null;
+
+$color-topic-item-good-text: $color-success-text;
+$color-topic-item-good-background: $color-success-lighter;
+$topic-item-good-border: null;
+
+// Timer
+$color-timer-progress-background: $color-primary-lighter;
+$timer-progress-border: null;
+
+// Toolbar
+$color-toolbar-text: $color-primary-text;
+$color-toolbar-background: $color-primary;
+$toolbar-border: null;
+
+$color-toolbar-button-text: null;
+$color-toolbar-button-background: $color-primary-lighter;
+$toolbar-button-border: null;
+
+$color-toolbar-button-hover-text: null;
+$color-toolbar-button-hover-background: $color-primary-light;
+$toolbar-button-hover-border: null;
+
+$color-toolbar-button-active-text: orange; // $color-warning-light;
+$color-toolbar-button-active-background: null;
+$toolbar-button-active-border: null;
+
+$color-toggler-simple-text: $color-prompt-text;
+$color-toggler-simple-background: $color-primary-dark;
+$toggler-simple-border: thin solid $color-primary;
+
+$color-toggler-simple-circle: $color-error-lighter;
+$toggler-simple-circle-border: null;
+
+$color-toggler-simple-circle-active: $color-success-lighter;
+$toggler-simple-circle-active-border: null;

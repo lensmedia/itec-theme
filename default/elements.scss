@@ -1,0 +1,651 @@
+& {
+    @include color-set($color-text, $color-background);
+}
+
+hr {
+    border-bottom: $hr-border;
+}
+
+input[type="checkbox"] + label::before {
+    @include color-set($color-checkbox);
+}
+
+input[type="checkbox"]:checked + label::before {
+    @include color-set($color-checkbox-checked);
+}
+
+.button {
+    @include color-set(
+        $color-button-text,
+        $color-button-background,
+        $button-border,
+    );
+
+    &:hover {
+        @include color-set(
+            $color-button-text-hover,
+            $color-button-background-hover,
+            $button-border-hover,
+        );
+    }
+}
+
+.button-inverted {
+    @include color-set(
+        $color-button-inverted-text,
+        $color-button-inverted-background,
+        $button-inverted-border,
+    );
+
+    &:hover {
+        @include color-set(
+            $color-button-inverted-text-hover,
+            $color-button-inverted-background-hover,
+            $button-inverted-border-hover,
+        );
+    }
+}
+
+.button-primary {
+    @include color-set(
+        $color-button-primary-text,
+        $color-button-primary-background,
+        $button-primary-border,
+    );
+
+    &:hover {
+        @include color-set(
+            $color-button-primary-text-hover,
+            $color-button-primary-background-hover,
+            $button-primary-border-hover,
+        );
+    }
+}
+
+.button-info {
+    @include color-set(
+        $color-button-info-text,
+        $color-button-info-background,
+        $button-info-border,
+    );
+
+    &:hover {
+        @include color-set(
+            $color-button-info-text-hover,
+            $color-button-info-background-hover,
+            $button-info-border-hover,
+        );
+    }
+}
+
+.button-success {
+    @include color-set(
+        $color-button-success-text,
+        $color-button-success-background,
+        $button-success-border,
+    );
+
+    &:hover {
+        @include color-set(
+            $color-button-success-text-hover,
+            $color-button-success-background-hover,
+            $button-success-border-hover,
+        );
+    }
+}
+
+.button-warning {
+    @include color-set(
+        $color-button-warning-text,
+        $color-button-warning-background,
+        $button-warning-border,
+    );
+
+    &:hover {
+        @include color-set(
+            $color-button-warning-text-hover,
+            $color-button-warning-background-hover,
+            $button-warning-border-hover,
+        );
+    }
+}
+
+.button-error {
+    @include color-set(
+        $color-button-error-text,
+        $color-button-error-background,
+        $button-error-border,
+    );
+
+    &:hover {
+        @include color-set(
+            $color-button-error-text-hover,
+            $color-button-error-background-hover,
+            $button-error-border-hover,
+        );
+    }
+}
+
+.overflow-relative::after {
+    @include color-set($color-scrollindicator);
+}
+
+.overflow-relative::before {
+    background: -moz-linear-gradient(top, rgba($color-scrollindicator-gradient, 1) 0%, rgba($color-scrollindicator-gradient, 0) 100%); // FF3.6-15
+    background: -webkit-linear-gradient(top, rgba($color-scrollindicator-gradient, 1) 0%, rgba($color-scrollindicator-gradient, 0) 100%); // Chrome10-25,Safari5.1-6
+    background: -o-linear-gradient(top, rgba($color-scrollindicator-gradient, 1) 0%, rgba($color-scrollindicator-gradient, 0) 100%); // Chrome10-25,Safari5.1-6
+    background: -ms-linear-gradient(top, rgba($color-scrollindicator-gradient, 1) 0%, rgba($color-scrollindicator-gradient, 0) 100%); // Chrome10-25,Safari5.1-6
+    background: linear-gradient(to bottom, rgba($color-scrollindicator-gradient, 1) 0%, rgba($color-scrollindicator-gradient, 0) 100%); // W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+}
+
+.overflow-relative::after {
+    background: -moz-linear-gradient(top, rgba($color-scrollindicator-gradient, 0) 0%, rgba($color-scrollindicator-gradient, 1) 100%); // FF3.6-15
+    background: -webkit-linear-gradient(top, rgba($color-scrollindicator-gradient, 0) 0%, rgba($color-scrollindicator-gradient, 1) 100%); // Chrome10-25,Safari5.1-6
+    background: -o-linear-gradient(top, rgba($color-scrollindicator-gradient, 0) 0%, rgba($color-scrollindicator-gradient, 1) 100%); // Chrome10-25,Safari5.1-6
+    background: -ms-linear-gradient(top, rgba($color-scrollindicator-gradient, 0) 0%, rgba($color-scrollindicator-gradient, 1) 100%); // Chrome10-25,Safari5.1-6
+    background: linear-gradient(to bottom, rgba($color-scrollindicator-gradient, 0) 0%, rgba($color-scrollindicator-gradient, 1) 100%); // W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+}
+
+.view-initializer {
+    @include color-set($color-initializer-text, $color-initializer-background);
+}
+
+.initializer-loading {
+    @include color-set($color-initializer-loading-text, $color-initializer-loading-background);
+}
+
+.initializer-options {
+    @include color-set($color-initializer-options-text, $color-initializer-options-background);
+}
+
+.initializer-start {
+    @include color-set($color-initializer-start-text, $color-initializer-start-background);
+}
+
+.legend {
+    @include color-set($color-legend-text);
+
+    .marked { @include color-set($color-item-marked-mark); }
+}
+
+.passed-icon,
+.result-part .icon {
+    @include color-set($color-passed-icon-failed);
+}
+
+.passed-icon .icon-thumbs-up,
+.result-part .icon-thumbs-up {
+    @include color-set($color-passed-icon-success);
+}
+
+.hotspot-area {
+    fill: $color-hotspot-background;
+    stroke: $color-hotspot-border;
+}
+
+.hotspot-svg text {
+    fill: $color-hotspot-text;
+    stroke: none;
+}
+
+.item-numericentry .input {
+    @include color-set($color-option-text, $color-option-background, $option-border);
+}
+
+.modal {
+    @include color-set(
+        $color-modal-text,
+        $color-modal-background,
+        $modal-border,
+    );
+
+    &-info {
+        .modal {
+            @include color-set(
+                $color-info-text,
+                $color-info,
+                null,
+            );
+        }
+    }
+
+    &-caption,
+    &-close {
+        @include color-set(
+            null,
+            transparent,
+            null,
+        );
+    }
+}
+
+.progress-bar {
+    &.mapped {
+        @include color-set(
+            $color-progress-mapped-text,
+            $color-progress-mapped-background,
+            $progress-mapped-border
+        );
+    }
+
+    &.required {
+        @include color-set(
+            $color-progress-required-text,
+            $color-progress-required-background,
+            $progress-required-border
+        );
+    }
+
+    &.achieved {
+        @include color-set(
+            $color-progress-achieved-text,
+            $color-progress-achieved-background,
+            $progress-achieved-border
+        );
+    }
+}
+
+.toggler-simple {
+    @include color-set(
+        $color-toggler-simple-text,
+        $color-toggler-simple-background,
+        $toggler-simple-border,
+    );
+
+    .circle {
+        @include color-set(
+            null,
+            $color-toggler-simple-circle,
+            $toggler-simple-circle-border,
+        );
+    }
+}
+
+.toggler-simple.active .circle {
+    @include color-set(
+        null,
+        $color-toggler-simple-circle-active,
+        $toggler-simple-circle-active-border,
+    );
+}
+
+.toggler-side-by-side {
+    .toggler-on {
+        @include color-set(
+            $color-toggler-on-text,
+            $color-toggler-on-background,
+            $color-toggler-on-border,
+        );
+    }
+
+    .toggler-off {
+        @include color-set(
+            $color-toggler-off-text,
+            $color-toggler-off-background,
+            $color-toggler-off-border,
+        );
+    }
+}
+
+.tooltip > * {
+}
+
+.tooltip-primary > * {
+    @include color-set(
+        $color-primary-text,
+        $color-primary-light,
+    );
+
+    border-bottom: thin solid $color-primary-lighter;
+}
+
+.item-singlechoice,
+.item-numericentry,
+.item-multipleresponse {
+    .option {
+        @include color-set(
+            $color-option-text,
+            $color-option-background,
+            $option-border
+        );
+
+        &::before {
+            @include color-set($color-option-text);
+        }
+
+        &::after {
+            @include color-set($color-option-active-background);
+        }
+
+        &.active {
+            @include color-set(
+                $color-option-active-text,
+                $color-option-active-background,
+                $option-active-border,
+            );
+        }
+
+        &.incorrect {
+            &.active {
+                @include color-set(
+                    $color-option-incorrect-text,
+                    $color-option-incorrect-background,
+                    $option-incorrect-border,
+                );
+            }
+
+            &::before,
+            &::after {
+                @include color-set($color-option-incorrect-background);
+            }
+        }
+
+        &.correct {
+            &.active {
+                @include color-set(
+                    $color-option-correct-text,
+                    $color-option-correct-background,
+                    $option-correct-border,
+                );
+            }
+
+            &::before,
+            &::after {
+                @include color-set($color-option-correct-background);
+            }
+        }
+    }
+}
+
+.item-orderinteraction {
+    .option {
+        > span,
+        &::before {
+            @include color-set(
+                $color-option-text,
+                $color-option-background,
+                $option-border,
+            );
+        }
+
+        &::before {
+           border-right: 0;
+        }
+    }
+}
+
+.target-drag {
+    @include color-set(
+        $color-target-drag-text,
+        $color-target-drag-background,
+        $target-drag-border,
+    );
+}
+
+.target-drop {
+    @include color-set(
+        $color-target-drop-text,
+        $color-target-drop-background,
+        $target-drop-border,
+    );
+}
+
+.explanation {
+    &-content {
+        @include color-set($color-option-text, $color-option-background, $option-border);
+    }
+
+    .lead {
+        @include color-set($color-explanation-unanswered);
+    }
+
+    &.correct .lead {
+        @include color-set($color-explanation-correct);
+    }
+
+    &.incorrect .lead {
+        @include color-set($color-explanation-incorrect);
+    }
+}
+
+.button-feedback {
+    @extend .button-info;
+}
+
+.prompt {
+    @include color-set($color-prompt-text, $color-prompt-background, $prompt-border);
+
+    &::before { border-top-color: nth($prompt-border, 3); }
+    &::after { border-top-color: $color-prompt-background; }
+}
+
+.item-tile {
+    @include color-set(
+        $color-item-tile-text,
+        $color-item-tile-background,
+        $item-tile-border,
+    );
+
+    &.answered {
+        @include color-set($color-item-tile-background, $color-item-tile-text);
+    }
+
+    &.correct {
+        @include color-set(
+            $color-item-tile-text-correct,
+            $color-item-tile-background-correct,
+            $item-tile-border-correct,
+        );
+    }
+
+    &.incorrect {
+        @include color-set(
+            $color-item-tile-text-incorrect,
+            $color-item-tile-background-incorrect,
+            $item-tile-border-incorrect,
+        );
+    }
+
+    &.incorrect.unanswered {
+        @include color-set(
+            $color-item-tile-text-unanswered,
+            $color-item-tile-background-unanswered,
+            $item-tile-border-unanswered,
+        );
+    }
+
+    &.active {
+        @include box-shadow($item-tile-active-shadow);
+    }
+
+    &::after {
+        $marked-icon-stroke-color: black;
+
+        @include color-set($color-item-marked-mark);
+        @include text-shadow((
+            (0 0 1px $marked-icon-stroke-color),
+            (0 0 1px $marked-icon-stroke-color),
+            (0 0 1px $marked-icon-stroke-color),
+            (0 0 1px $marked-icon-stroke-color),
+            (0 0 1px $marked-icon-stroke-color),
+            (0 0 1px $marked-icon-stroke-color),
+            (0 0 1px $marked-icon-stroke-color),
+            (0 0 1px $marked-icon-stroke-color),
+        ));
+    }
+}
+
+.topic-item {
+    &.inadequate {
+        @include color-set(
+            $color-topic-item-inadequate-text,
+            $color-topic-item-inadequate-background,
+            $topic-item-inadequate-border,
+        );
+    }
+
+    &.adequate {
+        @include color-set(
+            $color-topic-item-adequate-text,
+            $color-topic-item-adequate-background,
+            $topic-item-adequate-border,
+        );
+    }
+
+    &.good {
+        @include color-set(
+            $color-topic-item-good-text,
+            $color-topic-item-good-background,
+            $topic-item-good-border,
+        );
+    }
+}
+
+.topic-list-feedback {
+    @include color-set(
+        null,
+        mix($color-text, $color-background, 5%),
+        thin solid mix($color-text, $color-background, 15%)
+    );
+
+    tr {
+        &:nth-child(even) { @include color-set(null, mix($color-text, $color-background, 10%)); }
+        &:hover { @include color-set(null, mix($color-text, $color-background, 15%)); }
+    }
+}
+
+.timer-bar {
+    @include color-set(null, $color-timer-progress-background, $timer-progress-border);
+}
+
+.toolbar {
+    @include color-set($color-toolbar-text, $color-toolbar-background, $toolbar-border);
+}
+
+.toolbar-button {
+    @include color-set(
+        $color-toolbar-button-text,
+        $color-toolbar-button-background,
+        $toolbar-button-border,
+    );
+
+    &:hover {
+        @include color-set(
+            $color-toolbar-button-hover-text,
+            $color-toolbar-button-hover-background,
+            $toolbar-button-hover-border,
+        );
+    }
+
+    &.active {
+        @include color-set(
+            $color-toolbar-button-active-text,
+            $color-toolbar-button-active-background,
+            $toolbar-button-active-border,
+        );
+    }
+}
+
+.toolbar .tooltip {
+    @include color-set(
+        $color-primary-text,
+        $color-primary-light,
+    );
+
+    .tooltip-seperator {
+        @include color-set(
+            null,
+            $color-primary-darker,
+        );
+
+        border-bottom: null;
+    }
+}
+
+.loading-progress-bar {
+    background-color: $color-error-light;
+}
+
+.volume-slider-graphic {
+    color: $color-text;
+    background-color: $color-success-light;
+    background-image: linear-gradient(
+        to right,
+        adjust-color($color-error-light, $saturation: 50%) 0%,
+        adjust-color($color-warning-light, $saturation: 50%) 50%,
+        adjust-color($color-success-light, $saturation: 50%) 100%
+    );
+}
+
+.initializer-error {
+    background-color: $color-error;
+}
+
+.timer-symbol-outer,
+.timer-symbol-middle {
+    fill: $color-primary;
+    stroke: $color-primary-lighter;
+}
+
+.timer-symbol-inner {
+    fill: $color-background;
+    stroke: $color-primary;
+}
+
+.timer-symbol-text {
+    fill: $color-primary;
+}
+
+.read-aloud-text-active span {
+    background-color: rgba($color-warning, .5);
+}
+
+.feedback label.invalid i {
+    color: $color-error-lighter;
+}
+
+.item-orderinteraction {
+    $counter-color: nth($option-border, 3);
+
+    .order-option-caption {
+        @include color-set($color-option-text, $color-option-background, $counter-color);
+    }
+
+    $active-counter-color: darken($color-option-active-background, 10%);
+    .dragging {
+        .order-option-caption {
+            @include color-set($color-option-active-text, $color-option-active-background, $active-counter-color);
+        }
+    }
+
+    .order-option.incorrect {
+        .order-option-counter {
+            @include color-set($color-orderinteraction-option-incorrect-background);
+        }
+
+        .order-option-caption {
+            @include color-set(
+                $color-orderinteraction-option-incorrect-text,
+                $color-orderinteraction-option-incorrect-background,
+                $orderinteraction-option-incorrect-border,
+            );
+        }
+    }
+
+    // If we want unanswered options to display as correct too.
+    // &.unanswered .order-option,
+    .order-option.correct {
+        .order-option-counter {
+            @include color-set($color-orderinteraction-option-correct-background);
+        }
+
+        .order-option-caption {
+            @include color-set(
+                $color-orderinteraction-option-correct-text,
+                $color-orderinteraction-option-correct-background,
+                $orderinteraction-option-correct-border,
+            );
+        }
+    }
+}
+
