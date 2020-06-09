@@ -1,0 +1,18 @@
+@mixin box-shadow($shadow: 0 0 $spacing rgba(black, .15)) {
+    box-shadow: $shadow;
+}
+
+@mixin text-shadow($shadow: 0 0 $spacing rgba(black, .15)) {
+    text-shadow: $shadow;
+}
+
+@mixin color-set($color: null, $background-color: null, $border: null) {
+    background-color: $background-color;
+    color: $color;
+
+    @if length($border) == 1 {
+        border-color: $border;
+    } @else {
+        border: $border;
+    }
+}

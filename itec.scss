@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .itec {
     &.theme-default {
         @import 'default/theme';
